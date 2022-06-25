@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+.container{
+  display: flex;
+  background-color: white;
+  width: 600px;
+  border-radius: 10px;
+}
+.image{
+  background-image: url('./images/image-product-desktop.jpg');
+  background-size: cover;
+  flex-basis: 50%;
+  border-radius: 10px 0 0 10px;
+}
+.text{
+  padding: 30px;
+  flex-basis: 50%;
+}
+.text p{
+  color: hsl(228, 12%, 48%);
+}
+.text .title{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+.text h1{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.text .caption{
+  line-height: 1.6;
+  font-size: 15px;
+}
+.text h3{
+  color:hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.text h3 s{
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.text button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border:0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.text button:hover{
+  background-color:hsl(212, 21%, 14%);
+}
+.text button p{
+  color:white;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.attribution{
+  display: none;
+}
+@media (max-width:767px) {
+  body{
+    padding: 20px;
+    height: 100%;
+  }
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .image{
+    background-image: url('./images/image-product-mobile.jpg');
+    flex-basis: 80%;
+    min-height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+}
